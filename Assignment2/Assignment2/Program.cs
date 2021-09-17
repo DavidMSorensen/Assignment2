@@ -8,5 +8,9 @@ namespace Assignment2
         {
             Console.WriteLine("Hello World!");
         }
+
+        static void test(){
+            Console.WriteLine("Hello World!");
+        }
     }
 }
