@@ -4,19 +4,29 @@ using Library;
 
 namespace Assignment2.Tests
 {
-    public class UnitTest1
+    public class StudentTest
     {
         [Fact]
-        public void Library_Student_Constructor_follows_rules()
+        public void Given_Student_Get_Nice_To_String()
         {
             // Arrange
-            var student = new Student(12);
+            DateTime startDate = DateTime.Now.AddYears(-1);
+            DateTime endDate = DateTime.Now.AddYears(2);
+            DateTime graduationDate = DateTime.Now.AddYears(2);
+            
+            var student = new Student(2){
+                GivenName = "Kim",
+                SurName = "Larsen",
+                StartDate = startDate,
+                EndDate = endDate,
+                GraduationDate = graduationDate
+            };
 
             // Act
             var actual = student.ToString();
 
             // Assert
-            var expected = $"Id: {student.Id}\nName: {student.GivenName}\nSurname: '{student.GivenName}'\nStatus: {student.Status}\nStart date: {student.StartDate}\nEnd date: {student.EndDate}\nGraduation date: {student.GraduationDate}";
+            var expected = $"Id: {student.Id}\nName: {student.GivenName}\nSurname: '{student.SurName}'\nStatus: {student.Status}\nStart date: {student.StartDate}\nEnd date: {student.EndDate}\nGraduation date: {student.GraduationDate}";
             Assert.Equal(expected,actual);
         }
     
