@@ -4,12 +4,8 @@
     <projectFile>Assignment2/Assignment2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88481f70-661c-4f9b-b163-e19166b98416" name="Changes" comment="Exercise 2 done">
+    <list default="true" id="88481f70-661c-4f9b-b163-e19166b98416" name="Changes" comment="Removed the overridden toString method for ImmutableStudent.cs to use the inbuilt for records.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2.Tests/ImmutableStudentTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2.Tests/ImmutableStudentTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Assignment2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Assignment2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ImmutableStudent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ImmutableStudent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631888125192</updated>
       <workItem from="1631888130848" duration="705000" />
-      <workItem from="1631889333730" duration="4147000" />
+      <workItem from="1631889333730" duration="4779000" />
     </task>
     <task id="LOCAL-00001" summary="Remade solution">
       <created>1631889488437</created>
@@ -83,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631892024041</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed the overridden toString method for ImmutableStudent.cs to use the inbuilt for records.">
+      <created>1632056066721</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632056066721</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +112,7 @@
     <MESSAGE value="Remade solution" />
     <MESSAGE value="Now the files are added..." />
     <MESSAGE value="Exercise 2 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise 2 done" />
+    <MESSAGE value="Removed the overridden toString method for ImmutableStudent.cs to use the inbuilt for records." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the overridden toString method for ImmutableStudent.cs to use the inbuilt for records." />
   </component>
 </project>
