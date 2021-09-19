@@ -88,13 +88,14 @@ namespace Assignment2.Tests
                 EndDate = endDate,
                 GraduationDate = graduationDate
             };
-    
-            
+
             //Act
             var actual = imStudent.ToString();
             
             //Assert
-            var expected = $"Id: {imStudent.Id}\nName: {imStudent.GivenName}\nSurname: '{imStudent.SurName}'\nStatus: {imStudent.Status}\nStart date: {imStudent.StartDate}\nEnd date: {imStudent.EndDate}\nGraduation date: {imStudent.GraduationDate}";
+            var expected =
+                $"ImmutableStudent {{ Id = {imStudent.Id}, GivenName = {imStudent.GivenName}, SurName = {imStudent.SurName}, Status = {imStudent.Status}, StartDate = {imStudent.StartDate}, EndDate = {imStudent.EndDate}, GraduationDate = {imStudent.GraduationDate} }}";
+
             Assert.Equal(expected,actual);
         }
       

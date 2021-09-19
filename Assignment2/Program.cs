@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Assignment2
 {
     class Program
@@ -7,7 +6,6 @@ namespace Assignment2
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            
         }
     }
 }

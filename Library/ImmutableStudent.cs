@@ -23,10 +23,5 @@ namespace Library
         public DateTime StartDate{get; init;}
         public DateTime EndDate{get; init;}
         public DateTime GraduationDate{get; init;}
-        
-        public override string ToString()
-        {
-            return $"Id: {Id}\nName: {GivenName}\nSurname: '{SurName}'\nStatus: {Status}\nStart date: {StartDate}\nEnd date: {EndDate}\nGraduation date: {GraduationDate}";
-        }
     }
 }
