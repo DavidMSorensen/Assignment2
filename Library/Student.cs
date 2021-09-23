@@ -14,15 +14,13 @@ namespace Library
         {
             get
             {
-                if(DateTime.Now < StartDate.AddYears(1)){
+                if(DateTime.Now < StartDate.AddYears(1))
                     return Status.New;
-                }else if(EndDate < GraduationDate){
+                if(EndDate < GraduationDate)
                     return Status.Dropout;
-                }else if(DateTime.Now > GraduationDate){
+                if (DateTime.Now > GraduationDate)
                     return Status.Graduated;
-                } else {
-                    return Status.Active;
-                }
+                return Status.Active;
             }
         }
         public DateTime StartDate{get; set;}
@@ -31,11 +29,7 @@ namespace Library
 
         public override string ToString()
         {
-            return $"Id: {Id}\nName: {GivenName}\nSurname: '{GivenName}'\nStatus: {Status}\nStart date: {StartDate}\nEnd date: {EndDate}\nGraduation date: {GraduationDate}";
+            return $"Id: {Id}\nName: {GivenName}\nSurname: '{SurName}'\nStatus: {Status}\nStart date: {StartDate}\nEnd date: {EndDate}\nGraduation date: {GraduationDate}";
         }
-    }
-
-    public enum Status{
-        New, Active, Dropout, Graduated
     }
 }
